@@ -1,5 +1,5 @@
 
-  <h1>Siapriş Otomasyon Sistemi</h1>
+  <h1>Sipariş Otomasyon Sistemi</h1>
 
   <h2>Özellikler</h2>
 
