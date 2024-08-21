@@ -10,9 +10,11 @@ const userRoute = require("./routes/users.js");
 
 const logger = require("morgan"); //http isteklerimizde log tutar terminalde 404 500 dondurur
 dotenv.config();
+const MONGO_URI = "mongodb+srv://zeynep3b:TcPcYXia0Cbwayrv@cluster0.oqo5r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
 const connect= async  ()=>{
     try {
-        await mongoose.connect(process.env.MONGO_URI)
+        await mongoose.connect(`${MONGO_URI}`)
         console.log("connect your application")
     } catch (error) {
         throw error
